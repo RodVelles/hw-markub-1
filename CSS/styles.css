@@ -1,0 +1,111 @@
+/* -------- Утиліти --------  */
+/* Основні кольора для текста 
+    Голубий колір заголовка #2196F3;
+    Чорний колір заголовка #000000;
+
+    Чорний колір тексту #212121;
+    Синій колір наведення #2196F3;
+
+    Білий колір тексту #FFFFFF;
+    Білий клір кнопки #FFFFFF;
+    Синій колір кнопки #2196F3;
+    Сірий колір адреси #2196F3;
+    Сірий колір доповнення #757575;
+    Сірий колр нижньої адреси rgba(255, 255, 255, 0.6);
+
+    Колір сторінки #E5E5E5;
+    Колір Плакату #2F303A;
+    Колір вікна команди #F5F4FA;
+
+    Колір кнопки фільтра #F5F4FA;
+
+*/
+
+/* --------------- Утиліти ---------------  */
+
+:root {
+	--primary-text-color: #757575;
+	--title-color: #212121;
+	--accent-color: #2196f3;
+	--primary-btn-bgc: #f5f4fa;
+	--accent-btn-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+button {
+	cursor: pointer;
+}
+
+img {
+	display: block;
+}
+
+.list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+
+/* -------- Тіло сторінки --------  */
+
+body {
+    background-color: #fff;
+    color: var(--title-color);
+    font-family: Roboto, sans-serif;
+	letter-spacing: 0.03em;   
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	padding-right: 15px;
+	padding-left: 15px;
+	outline: 2px solid red;
+}
+
+/* -------- Шапка сторінки --------  */
+
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: 1px solid #ECECEC;
+}
+
+.nav {
+    display: flex;
+}
+
+/* -------- Логотип сайту --------  */
+
+
+.logo-list {
+    display: flex;
+}
