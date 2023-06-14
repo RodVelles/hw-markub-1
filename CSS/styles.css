@@ -72,14 +72,13 @@ img {
 	overflow: hidden;
 }
 
-
 /* -------- Тіло сторінки --------  */
 
 body {
-    background-color: #fff;
-    color: var(--title-color);
-    font-family: Roboto, sans-serif;
-	letter-spacing: 0.03em;   
+	background-color: #fff;
+	color: var(--title-color);
+	font-family: Roboto, sans-serif;
+	letter-spacing: 0.03em;
 }
 
 .container {
@@ -94,18 +93,238 @@ body {
 /* -------- Шапка сторінки --------  */
 
 .header {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    border: 1px solid #ECECEC;
+	/* padding-top: 25px;
+	padding-bottom: 25px; */
+	border: 1px solid #ececec;
 }
 
-.nav {
-    display: flex;
-}
+/* .nav {
+	display: flex;
+} */
 
 /* -------- Логотип сайту --------  */
 
+.logo-link {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: #2196f3;
+}
 
-.logo-list {
-    display: flex;
+.logo-span {
+	color: #000000;
+}
+
+/* -------- Навігація сайту -------- */
+
+.site-nav {
+}
+
+.site-nav-item {
+}
+
+.site-nav-link {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	color: #212121;
+}
+
+.current {
+	color: var(--accent-color);
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus {
+	color: var(--accent-color);
+}
+.kontakt-list {
+}
+.kontakt-item {
+}
+
+.kontakt-link {
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-color);
+}
+
+.kontakt-link:hover,
+.kontakt-link:focus {
+	color: var(--accent-color);
+}
+
+/* -------- Герой сторінки -------- */
+
+.hero {
+	background-color: #2f303a;
+}
+
+.hero-title {
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.button {
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	color: #ffffff;
+	background-color: #2196f3;
+
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+}
+
+.button:hover,
+.button:focus {
+	background-color: #188ce8;
+}
+.section {
+}
+
+.advantages-list {
+}
+.advantages-box {
+}
+.advantages-subtitle {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+}
+.advantages-text {
+	font-size: 14px;
+	line-height: 1.71;
+	color: var(--primary-text-color);
+}
+
+/* -------- Чим займаємось -------- */
+
+.section-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+}
+.service-list {
+}
+.service-item {
+}
+
+/* -------- Члени команди -------- */
+
+.team-list {
+}
+.team-box {
+}
+.team-container {
+}
+.team-name {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+}
+
+.team-taxt {
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	color: var(--primary-text-color);
+}
+
+/* -------- Нижні дані футер -------- */
+
+.footer {
+	background-color: #2f303a;
+}
+
+.footer-address {
+}
+.address {
+}
+.footer-adres-list {
+}
+.link-addres {
+}
+.address-map {
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.71;
+	color: #ffffff;
+}
+.address-link {
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.address-link:hover,
+.address-link:focus {
+	color: var(--accent-color);
+}
+
+/* -------- Сторінка портфоліо -------- */
+
+/* -------- Фільтир сторінки -------- */
+
+.fiters-list {
+}
+
+.filter-item {
+}
+.filter-button {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	text-align: center;
+
+	background-color: #f5f4fa;
+	border-radius: 4px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+	color: var(--accent-btn-color);
+	background-color: var(--accent-color);
+}
+
+/* -------- Портфоліо -------- */
+
+.potfolio-list {
+}
+.portfolio-item {
+}
+.portfolio-text-box {
+}
+.portfolio-name {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+.portfolio-text {
+	font-size: 16px;
+	line-height: 1.88;
+	color: var(--primary-text-color);
 }
