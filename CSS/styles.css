@@ -84,7 +84,8 @@ body {
 .container {
 	margin-left: auto;
 	margin-right: auto;
-	width: 1200px;
+	width: 100%;
+	max-width: 1200px;
 	padding-right: 15px;
 	padding-left: 15px;
 	outline: 2px solid red;
@@ -93,14 +94,21 @@ body {
 /* -------- Шапка сторінки --------  */
 
 .header {
-	/* padding-top: 25px;
-	padding-bottom: 25px; */
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background-color: #fff;
 	border: 1px solid #ececec;
 }
 
-/* .nav {
+.container.container-nav {
 	display: flex;
-} */
+	align-items: center;
+}
+
+.nav {
+	display: flex;
+
+}
 
 /* -------- Логотип сайту --------  */
 
@@ -119,6 +127,8 @@ body {
 /* -------- Навігація сайту -------- */
 
 .site-nav {
+	display: flex;
+	align-items: center;
 }
 
 .site-nav-item {
@@ -141,8 +151,11 @@ body {
 .site-nav-link:focus {
 	color: var(--accent-color);
 }
+
 .kontakt-list {
+	display: flex;
 }
+
 .kontakt-item {
 }
 
@@ -164,10 +177,17 @@ body {
 /* -------- Герой сторінки -------- */
 
 .hero {
+	padding-top: 200px;
+	padding-bottom: 200px;
 	background-color: #2f303a;
 }
 
 .hero-title {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+
 	font-family: "Roboto", sans-serif;
 	font-weight: 900;
 	font-size: 44px;
@@ -191,6 +211,11 @@ body {
 
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
+	padding: 10px 32px;
+	min-width: 200px;
+	border: none;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .button:hover,
@@ -198,6 +223,8 @@ body {
 	background-color: #188ce8;
 }
 .section {
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 
 .advantages-list {
@@ -219,6 +246,8 @@ body {
 /* -------- Чим займаємось -------- */
 
 .section-title {
+	margin-bottom: 50px;
+
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.16;
@@ -236,8 +265,12 @@ body {
 .team-box {
 }
 .team-container {
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .team-name {
+	margin-bottom: 10px;
+
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.19;
@@ -255,15 +288,19 @@ body {
 
 .footer {
 	background-color: #2f303a;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .footer-address {
 }
 .address {
+	margin-top: 20px;
 }
 .footer-adres-list {
 }
-.link-addres {
+.link-addres:not(:last-child) {
+	margin-bottom: 9px;
 }
 .address-map {
 	font-style: normal;
@@ -311,13 +348,24 @@ body {
 
 /* -------- Портфоліо -------- */
 
+.filters-list {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
 .potfolio-list {
 }
 .portfolio-item {
 }
 .portfolio-text-box {
+	padding: 20px 24px;
+	border: 1px solid #eeeeee;
+	border-top: none;
+	background-color: #ffffff;
 }
 .portfolio-name {
+	margin-bottom: 4px;
+
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
